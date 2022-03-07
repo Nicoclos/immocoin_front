@@ -4,12 +4,14 @@ import Home from "./Pages/Home";
 import Login from './Pages/Login';
 import Profile from './Pages/Profile';
 import Register from './Pages/Register';
-import './App.css';
+import './App.scss';
+import Navbar from './components/Navbar';
 
 function App() {
     return (
 
         <BrowserRouter>
+          <Navbar />
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/login" element={<Login/>} />
