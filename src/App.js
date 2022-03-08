@@ -6,6 +6,7 @@ import Profile from './Pages/Profile';
 import Register from './Pages/Register';
 import './App.scss';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/profile" element={<Profile/>} />
             <Route path="/register" element={<Register/>} />
           </Routes>
+          <Footer />
         </BrowserRouter>
     )
 };

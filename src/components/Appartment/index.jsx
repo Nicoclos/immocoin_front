@@ -5,7 +5,7 @@ import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 
 const  Display = () => {
     return (
-        
+        <div className='box2'>
       <Box
         sx={{
           display: 'flex',
@@ -16,6 +16,7 @@ const  Display = () => {
           borderRadius: '12px',
           boxShadow: 1,
           fontWeight: 'bold',
+          
         }}
       >
         <Box
@@ -23,8 +24,8 @@ const  Display = () => {
           sx={{
             height: 233,
             width: 350,
-            maxHeight: { xs: 233, md: 167 },
-            maxWidth: { xs: 350, md: 250 },
+            maxHeight: { xs: 233, md: 250 },
+            maxWidth: { xs: 350, md: 350 },
           }}
           alt="The house from the offer."
           src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&w=350&dpr=2"
@@ -35,14 +36,15 @@ const  Display = () => {
             flexDirection: 'column',
             alignItems: { xs: 'center', md: 'flex-start' },
             m: 3,
-            minWidth: { md: 350 },
+            minWidth: { md: 250 },
+            
           }}
         >
           <Box component="span" sx={{ fontSize: 16, mt: 1 }}>
-            123 Main St, Phoenix AZ
+            Title
           </Box>
           <Box component="span" sx={{ color: 'primary.main', fontSize: 22 }}>
-            $280,000 — $310,000
+            Price : $  —  $
           </Box>
           <Box
             sx={{
@@ -55,6 +57,8 @@ const  Display = () => {
               display: 'flex',
               fontSize: 12,
               alignItems: 'center',
+              
+              
               '& svg': {
                 fontSize: 21,
                 mr: 0.5,
@@ -64,6 +68,7 @@ const  Display = () => {
           </Box>
         </Box>
       </Box>
+      </div>
     );
   }
 
