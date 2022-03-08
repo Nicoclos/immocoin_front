@@ -6,9 +6,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { logoutSuccess } from '../../redux/actions/authActions';
 import './index.scss';
 
-
-
-
 const Navbar = () => {
 
     const dispatch = useDispatch();
