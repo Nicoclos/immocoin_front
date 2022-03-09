@@ -26,10 +26,10 @@ const Navbar = () => {
                         <Link to={`/`}>ImmoCoin</Link>
                     </Menu.Item> 
                     <Menu.Item key="2"icon={<LoginOutlined />}>
-                        <Link to={`/Login`} >Login</Link> 
+                        <Link to={`/Login`} >Se connecter</Link> 
                     </Menu.Item>
                     <Menu.Item key="3" icon={<UsergroupAddOutlined />}>
-                        <Link to={`/Register`}>Sign Up</Link> 
+                        <Link to={`/Register`}>Inscription</Link> 
                     </Menu.Item>
                     {isAuthenticated && (
                         <Menu.Item key="4">
