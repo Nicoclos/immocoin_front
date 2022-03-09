@@ -38,7 +38,6 @@ const Navbar = () => {
                         </Link>
                         </Menu.Item>
                     )}
-
                     {isAuthenticated && (
                         <Menu.Item key="5">
                         <Link to="/profile">My Profile</Link>
