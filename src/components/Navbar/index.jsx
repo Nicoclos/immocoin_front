@@ -34,7 +34,7 @@ const Navbar = () => {
                     {isAuthenticated && (
                         <Menu.Item key="4">
                         <Link to="/logout" onClick={handleSignOut}>
-                            Sign Out
+                            Se déconnecter
                         </Link>
                         </Menu.Item>
                     )}
