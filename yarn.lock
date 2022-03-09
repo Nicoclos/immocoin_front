@@ -8147,6 +8147,15 @@
   optionalDependencies:
     "fsevents" "^2.3.2"
 
+"react-textarea-autosize@^8.3.3":
+  "integrity" "sha512-2XlHXK2TDxS6vbQaoPbMOfQ8GK7+irc2fVK6QFIcC8GOnH3zI/v481n+j1L0WaPVvKxwesnY93fEfH++sus2rQ=="
+  "resolved" "https://registry.npmjs.org/react-textarea-autosize/-/react-textarea-autosize-8.3.3.tgz"
+  "version" "8.3.3"
+  dependencies:
+    "@babel/runtime" "^7.10.2"
+    "use-composed-ref" "^1.0.0"
+    "use-latest" "^1.0.0"
+
 "react-transition-group@^4.4.0", "react-transition-group@^4.4.2":
   "integrity" "sha512-/RNYfRAMlZwDSr6z4zNKV6xu53/e2BuaBbGhbyYIXTrmgu/bGHzmqOs7mJSJBHy9Ud+ApHx3QjrkKSp1pxvlFg=="
   "resolved" "https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.2.tgz"
@@ -9346,6 +9355,23 @@
   "version" "4.4.1"
   dependencies:
     "punycode" "^2.1.0"
+
+"use-composed-ref@^1.0.0":
+  "integrity" "sha512-6+X1FLlIcjvFMAeAD/hcxDT8tmyrWnbSPMU0EnxQuDLIxokuFzWliXBiYZuGIx+mrAMLBw0WFfCkaPw8ebzAhw=="
+  "resolved" "https://registry.npmjs.org/use-composed-ref/-/use-composed-ref-1.2.1.tgz"
+  "version" "1.2.1"
+
+"use-isomorphic-layout-effect@^1.0.0":
+  "integrity" "sha512-L7Evj8FGcwo/wpbv/qvSfrkHFtOpCzvM5yl2KVyDJoylVuSvzphiiasmjgQPttIGBAy2WKiBNR98q8w7PiNgKQ=="
+  "resolved" "https://registry.npmjs.org/use-isomorphic-layout-effect/-/use-isomorphic-layout-effect-1.1.1.tgz"
+  "version" "1.1.1"
+
+"use-latest@^1.0.0":
+  "integrity" "sha512-d2TEuG6nSLKQLAfW3By8mKr8HurOlTkul0sOpxbClIv4SQ4iOd7BYr7VIzdbktUCnv7dua/60xzd8igMU6jmyw=="
+  "resolved" "https://registry.npmjs.org/use-latest/-/use-latest-1.2.0.tgz"
+  "version" "1.2.0"
+  dependencies:
+    "use-isomorphic-layout-effect" "^1.0.0"
 
 "util-deprecate@^1.0.1", "util-deprecate@^1.0.2", "util-deprecate@~1.0.1":
   "integrity" "sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8="

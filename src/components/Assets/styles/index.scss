@@ -11,10 +11,7 @@ img {
     max-width: 1903px;    
 }
 
-.footer {
-    display: flex;
-    justify-content: center;
-}
+
 
 form{
     display: flex;
@@ -63,5 +60,77 @@ input{
 .profil{
     margin-left: 700px;
     margin-top: 100px;
-    margin-bottom: 180px;
+    margin-bottom: 120px;
+}
+
+.btn-inscription{
+    margin-left: 430px;
+    margin-bottom: 280px;
+}
+
+.btn-accueil{
+    padding-top: 20px;
+}
+
+.Sign-inh4{
+    padding-left: 140px;
+}
+
+.btn-login{
+    margin-left: 215px;
+
+}
+
+.Login{
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 70px;
+}
+
+.Register{
+    margin-bottom: 50px;
+}
+
+.Realty{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.Titlerealty{
+    display: flex;
+    justify-content: center;
+}
+
+.MuiTypography-h5{
+    padding-left: 20px;
+}
+
+.textarea{
+    margin-left: 26px;
+    margin-top: 23px;
+    margin-bottom: 25px;
+}
+
+.imgfooter{
+    display:flex;
+    justify-content: center;
+    z-index: 999;
+    
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+   
+    
+}
+
+.MuiContainer-root{
+    padding-left: 0px !important;
+}
+
+.footer{
+    background-image: url() ;
 }

@@ -1,118 +1,131 @@
-import * as React from "react";
-import Avatar from "@mui/material/Avatar";
-import { Button } from "@mui/material";
-import CssBaseline from "@mui/material/CssBaseline";
-import { TextField } from "@mui/material";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import { Checkbox } from "@mui/material";
-import { Link } from "@mui/material";
-import { Grid } from "@mui/material";
-import Box from "@mui/material/Box";
-import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import { Typography } from "@mui/material";
-import Container from "@mui/material/Container";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import React from 'react';
+import { Box, Button, Checkbox, Container, FormHelperText, Link, TextField, Typography} from '@mui/material';
 
-const theme = createTheme();
-
-export default function Register() {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    // eslint-disable-next-line no-console
-    console.log({
-      email: data.get("email"),
-      password: data.get("password"),
-    });
-  };
-
+const Register = () => {
+  
   return (
-    <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth="xs">
-        <CssBaseline />
-        <Box
-          sx={{
-            marginTop: 8,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
-          <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
-            <LockOutlinedIcon />
-          </Avatar>
-          <Typography component="h1" variant="h5">
-            Inscription
-          </Typography>
-          <Box
-            component="form"
-            noValidate
-            onSubmit={handleSubmit}
-            sx={{ mt: 3 }}
-          >
-            <Grid container spacing={2}>
-              <Grid item xs={12} sm={6}>
-                <TextField
-                  autoComplete="given-name"
-                  name="firstName"
-                  required
-                  fullWidth
-                  id="firstName"
-                  label="Prénom"
-                  autoFocus
-                />
-              </Grid>
-              <Grid item xs={12} sm={6}>
-                <TextField
-                  required
-                  fullWidth
-                  id="lastName"
-                  label="Nom"
-                  name="lastName"
-                  autoComplete="family-name"
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  id="email"
-                  label="Email"
-                  name="email"
-                  autoComplete="email"
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  name="password"
-                  label="Password"
-                  type="password"
-                  id="password"
-                  autoComplete="new-password"
-                />
-              </Grid>
-            </Grid>
-            <Button
-              type="submit"
+    <>
+    <div className='Register'>
+      <Box
+        component="main"
+        sx={{
+          alignItems: 'center',
+          display: 'flex',
+          flexGrow: 1,
+          minHeight: '100%'
+        }}
+      >
+        <Container maxWidth="sm">
+          <form>
+            <Box sx={{ my: 3 }}>
+              <Typography
+                color="textPrimary"
+                variant="h4"
+              >
+                Créer un nouveau compte
+              </Typography>
+              <Typography
+                color="textSecondary"
+                gutterBottom
+                variant="body2"
+              >
+                Utilisez votre email pour créer un nouveau compte
+              </Typography>
+            </Box>
+            <TextField
               fullWidth
-              variant="contained"
-              sx={{ mt: 3, mb: 2 }}
+              label="Prénom"
+              margin="normal"
+              name="firstName"
+              variant="outlined"
+            />
+            <TextField
+              fullWidth
+              label="Nom"
+              margin="normal"
+              name="lastName"
+              variant="outlined"
+            />
+            <TextField
+              fullWidth
+              label="Email"
+              margin="normal"
+              name="email"
+              type="email"
+              variant="outlined"
+            />
+            <TextField
+              fullWidth
+              label="Mot de Passe"
+              margin="normal"
+              name="password"
+              type="password"
+              variant="outlined"
+            />
+            <Box
+              sx={{
+                alignItems: 'center',
+                display: 'flex',
+                ml: -1
+              }}
             >
-              Inscription
-            </Button>
-            <Grid container justifyContent="flex-end">
-              <Grid item>
-                <Link href="/login" variant="body2">
-                Vous avez déjà un compte? S'identifier
+              <Checkbox
+                name="policy"
+              />
+              <Typography
+                color="textSecondary"
+                variant="body2"
+              >
+                J'ai lu les
+                {' '}
+                <Link
+                  href="#"
+                  passHref
+                >
+                  <Link
+                    color="primary"
+                    underline="always"
+                    variant="subtitle2"
+                  >    
+                  Termes et conditions
+                  </Link>
                 </Link>
-              </Grid>
-            </Grid>
-          </Box>
-        </Box>
-        
-      </Container>
-    </ThemeProvider>
+              </Typography>
+            </Box>
+            <Box sx={{ py: 2 }}>
+              <Button
+                color="primary"
+                fullWidth
+                size="large"
+                type="submit"
+                variant="contained"
+              >
+                Inscription
+              </Button>
+            </Box>
+            <Typography
+              color="textSecondary"
+              variant="body2"
+            >
+              Avez-vous un compte ?
+              {' '}
+              <Link
+                href="/login"
+              >
+                <Link
+                  variant="subtitle2"
+                  underline="hover"
+                >
+                  Se connecter
+                </Link>
+              </Link>
+            </Typography>
+          </form>
+        </Container>
+      </Box>
+      </div>
+    </>
   );
-}
+};
+
+export default Register;
